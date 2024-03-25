@@ -43,6 +43,11 @@ public class TestMain {
         //animal variable represents the parameter of the method inside Pet interface
         //it can be written horse,dog,anything
         //only condition before and after -> should be the same variable
+        //after the variable, we can reach its all methods
+
+        //here, Pet interface has a method, it accepts Dog object,
+        //animal -> animal.  represents the Dog object,
+        //so animal. ....has access of all methods of Dog class
 
     }
 }
