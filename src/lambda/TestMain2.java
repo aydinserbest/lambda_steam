@@ -2,6 +2,7 @@ package lambda;
 
 public class TestMain2 {
     public static void main(String[] args) {
+        //lambda can have multiple parameters:
 
         /*
         Firstly, the Human here is a Functional Interface.
@@ -11,6 +12,7 @@ public class TestMain2 {
         Meaning, it has a single method credentials
         and you're providing an on-the-spot implementation of it
           */
+
         Human human = (fn, ln, age) -> {
             System.out.println(fn);
             System.out.println(ln);
@@ -22,6 +24,12 @@ public class TestMain2 {
         It takes the parameters firstName, lastName, and age and prints out each of these values.
          */
         human.credentials("John", "Doe", 30);
+        Human human2 = new Human() {
+            @Override
+            public void credentials(String firstName, String lastName, int age) {
+                System.out.println("");
+            }
+        };
         }
     }
     /*\Lastly, with the human.credentials("John", "Doe", 30); code line,
