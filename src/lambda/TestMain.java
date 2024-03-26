@@ -3,6 +3,8 @@ package lambda;
 public class TestMain {
     public static void main(String[] args) {
 
+        //lambda is basically a body of a method
+
         // lamb expression is an implementation of an interface
         //only condition is , that interface must have only 1 abstract method
         //if it has more than 1 abstract method , it will not work
@@ -48,6 +50,9 @@ public class TestMain {
         //here, Pet interface has a method, it accepts Dog object,
         //animal -> animal.  represents the Dog object,
         //so animal. ....has access of all methods of Dog class
-
+        GreetingService greet8 = message -> {
+            System.out.println("uppercase:: " + message.toUpperCase());
+            System.out.println("numbers::" + message.length());
+        };
     }
 }
