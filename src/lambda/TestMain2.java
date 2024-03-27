@@ -24,12 +24,6 @@ public class TestMain2 {
         It takes the parameters firstName, lastName, and age and prints out each of these values.
          */
         human.credentials("John", "Doe", 30);
-        Human human2 = new Human() {
-            @Override
-            public void credentials(String firstName, String lastName, int age) {
-                System.out.println("");
-            }
-        };
         }
     }
     /*\Lastly, with the human.credentials("John", "Doe", 30); code line,

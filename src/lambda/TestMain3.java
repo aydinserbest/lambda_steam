@@ -18,7 +18,6 @@ public class TestMain3 {
         By selecting 'Replace with lambda',
         IntelliJ IDEA will automatically convert the anonymous class method to a lambda expression.
          */
-        Human lambda = (firstName, lastName, age) -> {
-        };
+        Human lambda = (firstName, lastName, age) -> System.out.println(firstName + " " + lastName + " " + age);
     }
 }
